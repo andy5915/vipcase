@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Bootstrap+Grid Demo</title>
+    <style>
+        .header {
+            height: 100vh;
+            background-image: url(https://images.unsplash.com/photo-1508717146309-25a0019d0381?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1d56e8467d3ce6b1b4781bfa73c96e05&auto=format&fit=crop&w=1051&q=80);
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        /* ---- grid ---- */
+
+        .grid {
+            background: #f3f1f5a8;
+        }
+
+        /* clear fix */
+
+        .grid:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header d-flex justify-content-center align-items-center">
+        <div class="text-center text-green">
+            <img src="https://www.104portal.com.tw/images/logo.png" alt="網動廣告科技股份有限公司">
+            <h3>網動廣告科技<small>股份有限公司</small></h3>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary mt-5" data-toggle="modal" data-target="#exampleModalCenter">
+                Touch Me
+            </button>
+            
+        </div>
+    </header>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">網動廣告科技股份有限公司</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <h4>~歡迎光臨～</h4>
+                祝母親節快樂！！
+            </div>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+        </div>
+    </div>
+</div>
+<div class="container-fluind">
+    <nav class="navbar  navbar-expand-lg col-sm-12 navbar-dark bg-dark sticky-top ">
+        <a class="navbar-brand" href="#">
+<i class="fa fa-home" style="font-size:30px;color:white"></i>
+            <!-- <span class="sr-only">(current)</span> -->
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" href="order-confirmation-notice.html" role="tab" aria-controls="pills-home" aria-selected="true">訂單確認-通知訂貨人</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="password-notice.html">忘記密碼通知信</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="order-closed-notice.html">訂單結案-通知訂貨人</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="member-notice.html">會員註冊通知信</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="demand-notice.html">需求單訊息</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="forms-notice.html">表單登記通知</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="payment-notice.html">付款完成通知</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown可下拉</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+    <section class="py-3 " style="background-image: url(https://images.unsplash.com/photo-1506269996138-4c6d92fbd8a5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=359d01e6e1f9e973ec9472ae5ee8074b&auto=format&fit=crop&w=2500&q=80);background-position: center center;
+background-attachment:fixed;background-size: cover;">
+        <div class="container ">
+            <h3 class="text-center">關於我們</h3>
+            <p class="text-center">There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...</p>
+            <div class="row md-3">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1519764647053-ed125e5c9dc4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=82872a626e2efa229f74a71b0ce7d58e&auto=format&fit=crop&w=1267&q=80"
+                        alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="py-3">Why do we use it?</h4>
+                    <p class="text-justify">It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                        of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                        Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+                        text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+                        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour
+                        and the like).
+                    </p>
+                    </p>There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is
+                    pain..
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-3" style="background-image: url(https://images.unsplash.com/photo-1502741126161-b048400d085d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9a76e75ea82cc42c0c63081c584cbb70&auto=format&fit=crop&w=2549&q=80);background-position: center center;background-attachment:fixed;background-size: cover;">
+        <div class="container">
+            <h3 class="text-center">熱門商品</h3>
+            <p class="text-center">母親節活動，限時搶購中...... </p>
+            <div class="row grid ">
+
+                <div class="grid-sizer "></div>
+                <div class="col-md-4 col-sm-6 col-xl-3 grid-item mt-3 text-center">
+                    <!-- <h5>Orange--1</h5> -->
+                    <img src="https://images.unsplash.com/photo-1525385133512-2f3bdd039054?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1e121bd81d48a279e258379cfd3f0473&auto=format&fit=crop&w=664&q=80"
+                        alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 col-sm-6 col-xl-3 grid-item mt-3 text-cente">
+                    <!-- <h5>Coffee flower--2</h5> -->
+                    <img src="https://images.unsplash.com/photo-1525391832543-432b7e058cb0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2e4ff99886c058ac9a001cf5d4de320c&auto=format&fit=crop&w=2550&q=80"
+                        alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 col-sm-6 col-xl-3 grid-item mt-3 text-cente">
+                    <!-- <h5>Garlic--3</h5> -->
+                    <img src="https://images.unsplash.com/photo-1501420193726-1f65acd36cda?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=01a101b2270b694bec05f5058358df84&auto=format&fit=crop&w=668&q=80"
+                        alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 col-sm-6 col-xl-3 grid-item mt-3 text-cente">
+                    <!-- <h5>Fashionable--6</h5> -->
+                    <img src="https://images.unsplash.com/photo-1511372843403-757aadf79c6c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8409f73aa8d06686d2c7a694be394c6a&auto=format&fit=crop&w=1310&q=80"
+                        alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 col-sm-6 col-xl-3 grid-item mt-3 text-cente">
+                    <!-- <h5>Tulip flower--4</h5> -->
+                    <img src="https://images.unsplash.com/photo-1525300652384-24e94836631f?ixlib=rb-0.3.5&s=c5d9da56781745bc7d6f2df0992415b6&auto=format&fit=crop&w=668&q=80"
+                        alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 col-sm-6 col-xl-3 grid-item mt-3 text-cente">
+                    <!-- <h5>Fashionable--6</h5> -->
+                    <img src="https://images.unsplash.com/photo-1523768817242-39ab4249a6d5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=14e85dfb408586029279636308bca290&auto=format&fit=crop&w=2468&q=80"
+                        alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 col-sm-6 col-xl-3 grid-item mt-3 text-cente">
+                    <!-- <h5>Love baby--5</h5> -->
+                    <img src="https://images.unsplash.com/photo-1518228720823-c31477f48dc1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd9a1501edcf7c0ca849d934bd47f97e&auto=format&fit=crop&w=1350&q=80"
+                        alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 col-sm-6 col-xl-3 grid-item mt-3 text-cente">
+                    <!-- <h5>Fashionable--6</h5> -->
+                    <img src="https://images.unsplash.com/photo-1506152983158-b4a74a01c721?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d8cc7aba1103cbad5798e3b58d6dcef7&auto=format&fit=crop&w=1052&q=80"
+                        alt="" class="img-fluid rounded">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <footer class="container-fluind">
+        <div class="py-3 bg-dark">
+            <address class="text-center text-white">ADD:台北市中山區吉林路109號2樓 <p>Tel:02-25216998</p> </address>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <script>
+        // external js: masonry.pkgd.js, imagesloaded.pkgd.js
+
+        // init Masonry
+        var $grid = $('.grid').masonry({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            columnWidth: '.grid-sizer'
+        });
+        // layout Masonry after each image loads
+        $grid.imagesLoaded().progress(function () {
+            $grid.masonry();
+        }); 
+    </script>
+    
+</body>
+
+</html>
