@@ -31,21 +31,21 @@
         }
 
         #drag-drop-basic #source-container {
-            height: 400px;
+            height: 300px;
             border: 2px solid #ccc;
             flex: 1;
         }
 
         #drag-drop-basic #target-container {
-            height: 400px;
+            height: 300px;
             border: 2px solid #ccc;
             flex: 1;
         }
 
-        #drag-drop-basic #drag-source {
+        #drag-drop-basic #drag-source #drag-source2 {
             width: 100px;
             height: 100px;
-            border-radius: 50%;
+            /* border-radius: 50%; */
             background-color: steelblue;
         }
     </style>
@@ -58,10 +58,10 @@
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-success sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
 
-        <a class="navbar-brand" href="#">
-            <i class="material-icons  text-white px-2">home</i>網動網告科技</a>
+        <a class="navbar-brand text-white" href="#">
+            <i class="material-icons   px-2">home</i>網動網告科技</a>
         <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -89,7 +89,7 @@
                         Dropdown
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item text-white" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
@@ -101,15 +101,39 @@
             </ul>
         </div>
     </nav>
-    <div class="container">
-<div id="drag-drop-basic">
-    <div id="source-container" data-role="drag-drop-container">
-        <div id="drag-source" draggable="true" class="text-center py-4">編輯工具</div>
-    </div>
-    <div id="target-container" data-role="drag-drop-container"></div>
-</div>
+    <div class="container-fluid">
+        <div id="drag-drop-basic" class="row">
+            <div id="source-container" data-role="drag-drop-container" class="col-md-3 sticky-top">
+                <div class="row">
+                    <div id="drag-source" draggable="true" class="  border border-dark  btn-warning text-center col-md-6"> col-md-6 編輯工具1</div>
+                    <div id="drag-source2" draggable="true" class=" border border-dark  btn-warning text-center col-md-6 ">col-md-6 編輯工具2</div>
+                    <div id="drag-source3" draggable="true" class="  border border-dark  btn-warning text-center col-md-3  "> col-md-3 編輯工具1</div>
+                    <div id="drag-source4" draggable="true" class=" border border-dark  btn-warning text-center col-md-3 ">col-md-3 編輯工具2</div>
+                    <div id="drag-source5" draggable="true" class="  border border-dark  btn-warning text-center col-md-3 "> col-md-3 編輯工具1</div>
+                    <div id="drag-source6" draggable="true" class=" border border-dark  btn-warning text-center col-md-3">col-md-3 編輯工具2</div>
+                    <div id="drag-source7" draggable="true" class="  border border-dark  btn-warning text-center col-md-4  "> col-md-4 編輯工具1</div>
+                    <div id="drag-source8" draggable="true" class=" border border-dark  btn-warning text-center col-md-8  ">col-md-8 編輯工具2</div>
+                    <div id="drag-source9" draggable="true" class="  border border-dark  btn-warning text-center col-md-4  "> col-md-4 編輯工具1</div>
+                    <div id="drag-source10" draggable="true" class=" border border-dark  btn-warning text-center col-md-4 ">col-md-4 編輯工具2</div>
+                    <div id="drag-source11" draggable="true" class=" border border-dark  btn-warning text-center col-md-4 ">col-md-4 編輯工具2</div>
+                    <div id="drag-source12" draggable="true" class=" border border-dark  btn-warning text-center col-md-4">col-md-4 編輯工具2</div>
+                    <div id="drag-source13" draggable="true" class=" border border-dark  btn-warning text-center col-md-12">col-md-12 編輯工具2</div>
+                    <div id="drag-source14" draggable="true" class=" border border-dark  btn-warning text-center col-md-12">col-md-12 編輯工具2</div>
+                    <div id="drag-source15" draggable="true" class=" border border-dark  btn-warning text-center col-md-4">col-md-4 編輯工具
+                        <img src="edm.png" alt="edm" class="src"> </div>
+                </div>
+            </div>
+            <div class="col-md-9  bg-danger py-3">
+                <div id="target-container" data-role="drag-drop-container" class="row bg-success my-2 mx-2  py-2 px-2 "style="clear:both;"> </div>
+                <div id="target-container" data-role="drag-drop-container" class="row bg-success my-2 mx-2  py-2 px-2" style="clear:both;"> </div>
+                <div id="target-container" data-role="drag-drop-container" class="row bg-success my-2 mx-2  py-2 px-2" style="clear:both;"> </div>
+                <div id="target-container" data-role="drag-drop-container" class="row bg-success my-2 mx-2  py-2 px-2" style="clear:both;"> </div>
+                <div id="target-container" data-role="drag-drop-container" class="row bg-success my-2 mx-2  py-2 px-2" style="clear:both;"> </div>
+
+            </div>
         </div>
     </div>
+    </div>
 
     <br>
     <br>
@@ -168,53 +192,52 @@
     <br>
     <br>
     <br>
-    <script>
 
-        /**
-         * Drag and Drop multiple elements in multiple sources 
-        **/
-
-        let sourceContainerId = ''
-
-        // Allow multiple draggable items
-        let dragSources = document.querySelectorAll('[draggable="true"]')
-        dragSources.forEach(dragSource => {
-            dragSource.addEventListener('dragstart', dragStart)
-        })
-
-        // Allow multiple dropped targets
-        let dropTargets = document.querySelectorAll('[data-role="drag-drop-container"]')
-        dropTargets.forEach(dropTarget => {
-            dropTarget.addEventListener('drop', dropped)
-            dropTarget.addEventListener('dragenter', cancelDefault)
-            dropTarget.addEventListener('dragover', cancelDefault)
-        })
-
-        function cancelDefault(e) {
-            e.preventDefault()
-            e.stopPropagation()
-            return false
-        }
-
-        function dragStart(e) {
-            e.dataTransfer.setData('text/plain', e.target.id)
-            sourceContainerId = this.parentElement.id
-            console.log('sourceContainerId', sourceContainerId)
-        }
-
-        function dropped(e) {
-            // execute function only when target container is different from source container
-            if (this.id !== sourceContainerId) {
-                cancelDefault(e)
-                let id = e.dataTransfer.getData('text/plain')
-                e.target.appendChild(document.querySelector('#' + id))
-            }
-        }
-// End of Drag and Drop Basic
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
+<script>
+    /**
+     * Drag and Drop multiple elements in multiple sources 
+    **/
+    let sourceContainerId = ''
+
+    // Allow multiple draggable items
+    let dragSources = document.querySelectorAll('[draggable="true"]')
+    dragSources.forEach(dragSource => {
+        dragSource.addEventListener('dragstart', dragStart)
+    })
+
+    // Allow multiple dropped targets
+    let dropTargets = document.querySelectorAll('[data-role="drag-drop-container"]')
+    dropTargets.forEach(dropTarget => {
+        dropTarget.addEventListener('drop', dropped)
+        dropTarget.addEventListener('dragenter', cancelDefault)
+        dropTarget.addEventListener('dragover', cancelDefault)
+    })
+
+    function cancelDefault(e) {
+        e.preventDefault()
+        e.stopPropagation()
+        return false
+    }
+
+    function dragStart(e) {
+        e.dataTransfer.setData('text/plain', e.target.id)
+        sourceContainerId = this.parentElement.id
+        console.log('sourceContainerId', sourceContainerId)
+    }
+
+    function dropped(e) {
+        // execute function only when target container is different from source container
+        if (this.id !== sourceContainerId) {
+            cancelDefault(e)
+            let id = e.dataTransfer.getData('text/plain', 'Data to Drag')
+            e.target.appendChild(document.querySelector('#' + id))
+        }
+    }
+// End of Drag and Drop Basic
+</script>
 
 </html>
